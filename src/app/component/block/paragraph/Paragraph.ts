@@ -6,14 +6,17 @@ import AbstractBlock from '../AbstractBlock';
 export default class Paragraph extends AbstractBlock {
   public static readonly displayName: string = 'paragraph';
 
+  private unsetCustomCursor = CustomCursor.getInstance().setCustomCursorForElement(
+    this.element,
+    'video',
+  );
+
   constructor(el: HTMLElement) {
     super(el);
-
-    const customCursor = CustomCursor.getInstance();
-    customCursor.setCustomCursorForElement(el, 'video');
   }
 
   public dispose() {
+    this.unsetCustomCursor();
     super.dispose();
   }
 }
