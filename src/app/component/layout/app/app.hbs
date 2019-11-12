@@ -2,7 +2,9 @@
 <script src="./App.ts"></script>
 
 <div data-component="app-root">
-{{#each blocks}}
+  {{#each blocks}}
   {{> (lookup . 'name') data }}
-{{/each}}
+  {{/each}}
+
+  {{> block/custom-cursor }}
 </div>

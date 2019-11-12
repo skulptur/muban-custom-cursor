@@ -1,0 +1,14 @@
+.info-cursor {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+
+  .info-cursor-text {
+    user-select: none;
+    color: white;
+  }
+}
