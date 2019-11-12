@@ -66,6 +66,8 @@ export default class CustomCursor extends AbstractBlock {
         element.removeEventListener('mouseleave', this.unsetCursor);
       },
     });
+
+    return () => this.unsetCustomCursorForElement(element);
   }
 
   public unsetCustomCursorForElement(element: HTMLElement) {
