@@ -62,7 +62,7 @@
     "@types/core-js": "^2.5.0",
     "@types/handlebars": "4.0.40",
     "@types/webpack-env": "^1.13.6",
-    "highlight.js": "^9.13.1",
+    "highlight.js": "^10.4.1",
     "html-extract-data": "^1.0.1",
     "knockout": "^3.4.2",
     "lodash": "^4.17.11",
